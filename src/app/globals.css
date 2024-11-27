@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Helvetica Neue", Arial, sans-serif; /* Apply Helvetica Neue */
+}
+
+body {
+  line-height: 1.6;
+  background-color: #000000; /* Dark background */
+  color: #e0e0e0; /* Light text for contrast */
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  color: #ffffff; /* Bright white headings */
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.parallax {
+  background-image: url("/your-image-path.jpg"); /* Make sure this is your background image */
+  height: 100vh; /* Full height */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-bg {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax-layer {
+  transform: translateZ(-1px) scale(2); /* Slower scroll effect */
+}
