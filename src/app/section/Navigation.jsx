@@ -3,7 +3,7 @@ import Link from "next/link";
 import HamburgerNavbar from "./HamburgerNavbar";
 import { Button } from "@/components/ui/button";
 
-export const Header = () => {
+export const Navigation = () => {
   return (
     <header className="sticky top-0 z-50 py-4 border-b border-transparent md:border-none flex items-center bg-gradient-to-b from-gray-900 via-black to-transparent backdrop-blur-lg shadow-lg">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">

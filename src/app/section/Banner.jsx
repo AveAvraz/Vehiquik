@@ -40,7 +40,7 @@ export default async function Banner({ position = "main" }) {
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30 opacity-80"></div>
 
           <div className="relative z-10 text-center px-4">
-            <h1 className="text-6xl md:text-8xl font-bold text-white drop-shadow-lg">
+            <h1 className=" text-violet-100 font-circular-web text-6xl md:text-8xl font-bold text-white drop-shadow-lg">
               BANNER
             </h1>
           </div>
